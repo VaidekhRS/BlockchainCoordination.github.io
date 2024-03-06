@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRB Block Chain Coordination</title>
+</head>
+<body>
+    <h1>TRB Block Chain Coordination</h1>
+    <ul>
+        {% for trb_entry in trb_data %}
+            <li>
+                <strong>TRB Code:</strong> {{ trb_entry["TRB Code"] }}<br>
+                <strong>Technology Area:</strong> {{ trb_entry["Technology Area"] }}<br>
+                <strong>Year Commenced:</strong> {{ trb_entry["Year Commenced"] }}<br>
+                <strong>Specific Invention:</strong> {{ trb_entry["Specific Invention"] }}<br>
+                <strong>Level Number:</strong> {{ trb_entry["Level Number"] }}<br>
+                <strong>Level Meaning:</strong> {{ trb_entry["Level Meaning"] }}
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
