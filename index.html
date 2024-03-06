@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Participant Data</title>
+    <title>Blockchain Coordination - TRB Codes</title>
     <style>
-        .participant {
-            margin-bottom: 20px;
+        .block {
+            border: 1px solid black;
             padding: 10px;
-            border: 1px solid #ccc;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Participant Data</h1>
-    {% for participant in participants %}
-    <div class="participant">
-        <p><strong>TRB Code:</strong> {{ participant["TRB Code"] }}</p>
-        <p><strong>Technology Area:</strong> {{ participant["Technology Area"] }}</p>
-        <p><strong>Year Commenced:</strong> {{ participant["Year Commenced"] }}</p>
-        <p><strong>Specific Invention:</strong> {{ participant["Specific Invention"] }}</p>
-        <p><strong>Level Number:</strong> {{ participant["Level Number"] }}</p>
-        <p><strong>Level Meaning:</strong> {{ participant["Level Meaning"] }}</p>
+    <h1>TRB Codes - Blockchain Coordination</h1>
+    
+    {% for trb_entry in trb_data %}
+    <div class="block">
+        <p><strong>TRB Code:</strong> {{ trb_entry["TRB Code"] }}</p>
+        <p><strong>Technology Area:</strong> {{ trb_entry["Technology Area"] }}</p>
+        <p><strong>Year Commenced:</strong> {{ trb_entry["Year Commenced"] }}</p>
+        <p><strong>Specific Invention:</strong> {{ trb_entry["Specific Invention"] }}</p>
+        <p><strong>Level Number:</strong> {{ trb_entry["Level Number"] }}</p>
+        <p><strong>Level Meaning:</strong> {{ trb_entry["Level Meaning"] }}</p>
     </div>
     {% endfor %}
 </body>
 </html>
+
