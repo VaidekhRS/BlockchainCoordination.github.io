@@ -1,1 +1,1 @@
-# blockchain-coordination
+# blockchain-coordination.github.io
