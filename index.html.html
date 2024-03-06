@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #d5b778;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bababa;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+index.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s0">&gt;</span>
+<span class="s0">&lt;html&gt;</span>
+<span class="s0">&lt;head&gt;</span>
+    <span class="s0">&lt;title&gt;</span><span class="s1">Participant Data</span><span class="s0">&lt;/title&gt;</span>
+    <span class="s0">&lt;style&gt;</span>
+        <span class="s1">.participant {</span>
+            <span class="s1">margin-bottom: 20px;</span>
+            <span class="s1">padding: 10px;</span>
+            <span class="s1">border: 1px solid #ccc;</span>
+        <span class="s1">}</span>
+    <span class="s0">&lt;/style&gt;</span>
+<span class="s0">&lt;/head&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+    <span class="s0">&lt;h1&gt;</span><span class="s1">Participant Data</span><span class="s0">&lt;/h1&gt;</span>
+    <span class="s1">{% for participant in participants %}</span>
+    <span class="s0">&lt;div </span><span class="s2">class</span><span class="s3">=&quot;participant&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">TRB Code:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;TRB Code&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Technology Area:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;Technology Area&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Year Commenced:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;Year Commenced&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Specific Invention:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;Specific Invention&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Level Number:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;Level Number&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Level Meaning:</span><span class="s0">&lt;/strong&gt; </span><span class="s1">{{ participant[&quot;Level Meaning&quot;] }}</span><span class="s0">&lt;/p&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s1">{% endfor %}</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+</pre>
+</body>
+</html>
